@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | MM Dachy</title>
+<meta name="description" content="Pełna oferta MM Dachy: więźba dachowa, montaż i wymiana pokryć dachowych, dachy płaskie, obróbki blacharskie, rynny, podbitka z LED, naprawy i serwis. Kazanów i okolice.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon-180.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          charcoal: '#263339',
+          'charcoal-raised': '#2c3a40',
+          'charcoal-float': '#384850',
+          cream: '#faf7f0',
+          'cream-dim': '#c7d0d1',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['"Inter"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-charcoal text-cream-dim">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 is-scrolled">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="images/logo.webp" alt="MM Dachy, usługi dekarskie" class="h-10 md:h-12 w-auto rounded-md">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link text-cream">Usługi</a>
+      <a href="galeria.html" class="nav-link">Galeria</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:798712825" class="btn btn-primary rounded-full px-5 py-2.5 text-sm">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      798 712 825
+    </a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-charcoal blueprint overflow-hidden pt-32 pb-28 md:pt-40 md:pb-36 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-cream-dim hover:text-cream transition-colors text-sm uppercase tracking-wide mb-8 font-semibold">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      Strona główna
+    </a>
+    <div class="rule-bar mb-5"></div>
+    <h1 class="font-display font-black uppercase text-cream-dim leading-[0.92] tracking-tight text-5xl sm:text-7xl md:text-8xl max-w-5xl">
+      Dachy budowane <span class="text-cream">od A do Z</span>
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-cream-dim max-w-2xl leading-relaxed">
+      Dziesięć usług ciesielsko-dekarskich w jednych rękach. Więźba, krycie, obróbki i rynny wykonane przez tę samą ekipę, od pierwszej krokwi po ostatnią dachówkę.
+    </p>
+  </div>
+  <svg class="roofline absolute -bottom-px left-0 text-charcoal-raised" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ SERVICE CARDS ============ -->
+<section class="py-20 md:py-24 px-5 md:px-8 bg-charcoal-raised">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="hammer" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Więźba dachowa</h2>
+        <p class="text-cream-dim leading-relaxed">Konstrukcje ciesielskie od podstaw, krokwie, płatwie, kleszcze i deskowanie, wykonane zgodnie ze sztuką ciesielską.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="layers" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Montaż pokryć dachowych</h2>
+        <p class="text-cream-dim leading-relaxed">Krycie nowych dachów dachówką ceramiczną lub blachodachówką, wraz z łaceniem, membraną i wstępnymi obróbkami.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="refresh-cw" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Wymiana pokryć dachowych</h2>
+        <p class="text-cream-dim leading-relaxed">Zrywamy stare poszycie i montujemy nowe, dopasowane do istniejącej konstrukcji więźby.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="square" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Dachy płaskie</h2>
+        <p class="text-cream-dim leading-relaxed">Krycie papą termozgrzewalną i ocieplenie tarasów oraz dachów płaskich, ze szczelnymi obróbkami krawędzi.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="square-stack" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Obróbki blacharsko-dekarskie</h2>
+        <p class="text-cream-dim leading-relaxed">Kominy, kalenice i pasy nadrynnowe, obrabiamy blachą każdy trudny detal dachu na miarę.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="sun" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Montaż okien połaciowych</h2>
+        <p class="text-cream-dim leading-relaxed">Osadzenie i uszczelnienie okien dachowych wraz z kołnierzami zapewniającymi pełną szczelność.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="droplets" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Rynny, montaż i naprawa</h2>
+        <p class="text-cream-dim leading-relaxed">Nowe systemy rynnowe lub naprawa starych, uszczelnianie złączy i korekta spadków.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="lightbulb" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Podbitka i oświetlenie LED</h2>
+        <p class="text-cream-dim leading-relaxed">Montaż podbitki dachowej z wentylacją, opcjonalnie z taśmą LED podkreślającą linię okapu.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="wrench" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Naprawy i serwis dachowy</h2>
+        <p class="text-cream-dim leading-relaxed">Usuwanie przecieków i wymiana uszkodzonych elementów pokrycia, także w trybie awaryjnym, całą dobę.</p>
+      </article>
+
+      <article class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-14 h-14 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="brush" class="w-7 h-7 text-cream"></i>
+        </div>
+        <h2 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Czyszczenie i konserwacja</h2>
+        <p class="text-cream-dim leading-relaxed">Usuwanie liści, mchu i osadów z dachu i rynien, które prowadzą do zalań elewacji i fundamentów.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-20 px-5 md:px-8 bg-charcoal blueprint overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight text-cream mb-5">
+      Nie widzisz swojej usługi?
+    </h2>
+    <p class="text-cream-dim text-lg leading-relaxed mb-9 max-w-xl mx-auto">
+      Zadzwoń i opisz problem. Przy pracach dekarskich i ciesielskich prawie każde zlecenie da się dopasować.
+    </p>
+    <a href="tel:798712825" class="btn btn-primary rounded-full px-8 py-4 text-base inline-flex">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Zadzwoń: 798 712 825
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <img src="images/logo.webp" alt="MM Dachy" class="h-11 w-auto rounded-md mb-4">
+        <p class="text-cream-dim text-sm leading-relaxed max-w-xs">Usługi ciesielsko-dekarskie. Dachy budowane od więźby po ostatnią dachówkę.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-cream">
+          <li><a href="tel:798712825" class="nav-link">798 712 825</a></li>
+          <li><a href="mailto:mizerskidachy@gmail.com" class="nav-link break-all">mizerskidachy@gmail.com</a></li>
+          <li class="text-cream-dim">Kroczów Większy 58B, gm. Kazanów</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-xs text-cream-dim">
+      <span>© 2026 MM Dachy. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+</body>
+</html>

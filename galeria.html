@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria realizacji | MM Dachy</title>
+<meta name="description" content="Galeria realizacji MM Dachy: pokrycia dachowe, więźba dachowa, obróbki blacharskie i rynny w Kroczowie Większym, gmina Kazanów.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon-180.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          charcoal: '#263339',
+          'charcoal-raised': '#2c3a40',
+          'charcoal-float': '#384850',
+          cream: '#faf7f0',
+          'cream-dim': '#c7d0d1',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['"Inter"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-charcoal text-cream-dim">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50 is-scrolled">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="images/logo.webp" alt="MM Dachy, usługi dekarskie" class="h-10 md:h-12 w-auto rounded-md">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="galeria.html" class="nav-link text-cream">Galeria</a>
+      <a href="index.html#opinie" class="nav-link">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:798712825" class="btn btn-primary rounded-full px-5 py-2.5 text-sm">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      798 712 825
+    </a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="relative bg-charcoal blueprint overflow-hidden pt-32 pb-20 md:pt-40 md:pb-24 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <a href="index.html" class="inline-flex items-center gap-2 text-cream-dim hover:text-cream transition-colors text-sm uppercase tracking-wide mb-8 font-semibold">
+      <i data-lucide="arrow-left" class="w-4 h-4"></i>
+      Strona główna
+    </a>
+    <div class="rule-bar mb-5"></div>
+    <h1 class="font-display font-black uppercase text-cream-dim leading-[0.92] tracking-tight text-5xl sm:text-7xl md:text-8xl max-w-4xl">
+      Pełna <span class="text-cream">galeria</span>
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-cream-dim max-w-2xl leading-relaxed">
+      Realizacje MM Dachy w Kroczowie Większym i okolicach gminy Kazanów, od więźby po ostatnią dachówkę.
+    </p>
+  </div>
+</section>
+
+<!-- ============ GALLERY GRID ============ -->
+<section class="pb-24 md:pb-32 px-5 md:px-8 bg-charcoal">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/1.webp" data-caption="Zakończone pokrycie dachu dachówką ceramiczną">
+        <img src="images/1.webp" alt="Zakończone pokrycie dachu dachówką ceramiczną" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Pokrycie dachówką</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/2.webp" data-caption="Dom jednorodzinny z nowym pokryciem dachowym">
+        <img src="images/2.webp" alt="Dom jednorodzinny z nowym pokryciem dachowym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Nowe pokrycie</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/3.webp" data-caption="Kominek wentylacyjny i okna połaciowe na dachu ceramicznym">
+        <img src="images/3.webp" alt="Kominek wentylacyjny i okna połaciowe na dachu ceramicznym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Kominek i okna połaciowe</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/4.webp" data-caption="Dach czterospadowy kryty dachówką ceramiczną">
+        <img src="images/4.webp" alt="Dach czterospadowy kryty dachówką ceramiczną" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Dach czterospadowy</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/6.webp" data-caption="Podbitka dachowa z pasem wentylacyjnym">
+        <img src="images/6.webp" alt="Podbitka dachowa z pasem wentylacyjnym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Podbitka dachowa</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/7.webp" data-caption="Montaż podbitki i rynny dachowej">
+        <img src="images/7.webp" alt="Montaż podbitki i rynny dachowej" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Podbitka i rynna</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/8.webp" data-caption="Podbitka dachowa przy wejściu do domu">
+        <img src="images/8.webp" alt="Podbitka dachowa przy wejściu do domu" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Podbitka przy wejściu</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/10.webp" data-caption="Dach płaski i skośny, widok od strony tarasu">
+        <img src="images/10.webp" alt="Dach płaski i skośny, widok od strony tarasu" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Dach płaski i skośny</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/12.webp" data-caption="Membrana dachowa i obróbka kalenicy przed kryciem">
+        <img src="images/12.webp" alt="Membrana dachowa i obróbka kalenicy przed kryciem" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Membrana i kalenica</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/13.webp" data-caption="Przygotowanie do krycia dachówką, okna połaciowe">
+        <img src="images/13.webp" alt="Przygotowanie do krycia dachówką, okna połaciowe" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Przygotowanie do krycia</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/15.webp" data-caption="Szczyt dachu z kominem, ciemna dachówka">
+        <img src="images/15.webp" alt="Szczyt dachu z kominem, ciemna dachówka" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Szczyt dachu</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/16.webp" data-caption="Krycie dachu w trakcie realizacji">
+        <img src="images/16.webp" alt="Krycie dachu w trakcie realizacji" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Krycie w trakcie realizacji</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/18.webp" data-caption="Dom w trakcie budowy z nowym dachem czterospadowym">
+        <img src="images/18.webp" alt="Dom w trakcie budowy z nowym dachem czterospadowym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Dom w trakcie budowy</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/20.webp" data-caption="Ocieplenie ściany attykowej dachu płaskiego">
+        <img src="images/20.webp" alt="Ocieplenie ściany attykowej dachu płaskiego" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Ocieplenie dachu płaskiego</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/21.webp" data-caption="Cięcie elementów więźby dachowej na budowie">
+        <img src="images/21.webp" alt="Cięcie elementów więźby dachowej na budowie" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Prace ciesielskie</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/22.webp" data-caption="Widok więźby dachowej nad osiedlem domów jednorodzinnych">
+        <img src="images/22.webp" alt="Widok więźby dachowej nad osiedlem domów jednorodzinnych" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Więźba nad osiedlem</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/24.webp" data-caption="Surowa więźba dachowa przed pokryciem">
+        <img src="images/24.webp" alt="Surowa więźba dachowa przed pokryciem" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Surowa więźba</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/25.webp" data-caption="Konstrukcja więźby dachowej, krokwie i płatwie">
+        <img src="images/25.webp" alt="Konstrukcja więźby dachowej, krokwie i płatwie" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Krokwie i płatwie</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/27.webp" data-caption="Ściana z pustaków i dach w trakcie budowy">
+        <img src="images/27.webp" alt="Ściana z pustaków i dach w trakcie budowy" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Budowa w toku</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/29.webp" data-caption="Dom z dachem dwuspadowym za żywopłotem">
+        <img src="images/29.webp" alt="Dom z dachem dwuspadowym za żywopłotem" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Dach dwuspadowy</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/31.webp" data-caption="Dom z portykiem kolumnowym i ciemnym dachem">
+        <img src="images/31.webp" alt="Dom z portykiem kolumnowym i ciemnym dachem" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Portyk kolumnowy</span>
+      </button>
+      <button class="gallery-item rounded-xl aspect-[3/4]" data-full="images/32.webp" data-caption="Dach dwuspadowy sąsiadujący z pokryciem w kolorze czerwonym">
+        <img src="images/32.webp" alt="Dach dwuspadowy sąsiadujący z pokryciem w kolorze czerwonym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Realizacja sąsiedzka</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative py-20 px-5 md:px-8 bg-charcoal-raised">
+  <div class="relative max-w-3xl mx-auto text-center">
+    <h2 class="font-display font-extrabold uppercase text-4xl md:text-5xl leading-[0.95] tracking-tight text-cream mb-5">
+      Podoba Ci się nasza robota?
+    </h2>
+    <p class="text-cream-dim text-lg leading-relaxed mb-9 max-w-xl mx-auto">
+      Zadzwoń, opisz swój dach i umówmy termin oględzin.
+    </p>
+    <a href="tel:798712825" class="btn btn-primary rounded-full px-8 py-4 text-base inline-flex">
+      <i data-lucide="phone-call" class="w-5 h-5"></i>
+      Zadzwoń: 798 712 825
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <img src="images/logo.webp" alt="MM Dachy" class="h-11 w-auto rounded-md mb-4">
+        <p class="text-cream-dim text-sm leading-relaxed max-w-xs">Usługi ciesielsko-dekarskie. Dachy budowane od więźby po ostatnią dachówkę.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-cream">
+          <li><a href="tel:798712825" class="nav-link">798 712 825</a></li>
+          <li><a href="mailto:mizerskidachy@gmail.com" class="nav-link break-all">mizerskidachy@gmail.com</a></li>
+          <li class="text-cream-dim">Kroczów Większy 58B, gm. Kazanów</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-xs text-cream-dim">
+      <span>© 2026 MM Dachy. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-cream-dim hover:text-cream transition-colors" aria-label="Zamknij podgląd">
+    <i data-lucide="x" class="w-8 h-8"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  lucide.createIcons();
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lightboxImg.src = item.dataset.full;
+      lightboxImg.alt = item.dataset.caption || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>

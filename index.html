@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MM Dachy | Usługi ciesielsko-dekarskie, Kazanów i okolice</title>
+<meta name="description" content="MM Dachy, usługi ciesielsko-dekarskie w Kroczowie Większym, gmina Kazanów. Więźba dachowa, pokrycia dachowe, obróbki blacharskie, rynny. Czynne całą dobę.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="favicon-180.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          charcoal: '#263339',
+          'charcoal-raised': '#2c3a40',
+          'charcoal-float': '#384850',
+          cream: '#faf7f0',
+          'cream-dim': '#c7d0d1',
+        },
+        fontFamily: {
+          display: ['"Big Shoulders Display"', 'sans-serif'],
+          sans: ['"Inter"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-charcoal text-cream-dim">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between">
+    <a href="index.html" class="flex items-center shrink-0">
+      <img src="images/logo.webp" alt="MM Dachy, usługi dekarskie" class="h-10 md:h-12 w-auto rounded-md">
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wide">
+      <a href="uslugi.html" class="nav-link">Usługi</a>
+      <a href="galeria.html" class="nav-link">Galeria</a>
+      <a href="#opinie" class="nav-link">Opinie</a>
+      <a href="#kontakt" class="nav-link">Kontakt</a>
+    </nav>
+    <a href="tel:798712825" class="btn btn-primary rounded-full px-5 py-2.5 text-sm">
+      <i data-lucide="phone" class="w-4 h-4"></i>
+      798 712 825
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative min-h-[100svh] flex items-end overflow-hidden bg-charcoal">
+  <img src="images/19.webp" alt="Dach z blachy na rąbek stojący wykonany przez MM Dachy" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 hero-scrim"></div>
+  <div class="grain"></div>
+
+  <div class="relative max-w-7xl mx-auto w-full px-5 md:px-8 pb-24 md:pb-36 pt-32">
+    <div class="hero-panel max-w-3xl rounded-2xl p-7 md:p-10">
+      <h1 class="font-display font-black uppercase text-cream-dim leading-[0.92] tracking-tight text-[2.75rem] sm:text-6xl md:text-7xl">
+        Dach budowany od więźby<br><span class="text-cream">po ostatnią dachówkę.</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-cream-dim max-w-xl leading-relaxed">
+        Usługi ciesielsko-dekarskie w Kroczowie Większym i okolicach gminy Kazanów. Więźba, pokrycia dachowe, obróbki blacharskie i rynny, wszystko w jednych rękach.
+      </p>
+
+      <div class="mt-9 flex flex-wrap gap-4">
+        <a href="tel:798712825" class="btn btn-primary rounded-full px-7 py-4 text-base">
+          <i data-lucide="phone-call" class="w-5 h-5"></i>
+          Zadzwoń: 798 712 825
+        </a>
+        <a href="#realizacje" class="btn btn-outline rounded-full px-7 py-4 text-base">
+          Zobacz realizacje
+          <i data-lucide="arrow-down-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-3 text-sm font-semibold">
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-cream">
+          <i data-lucide="clock" class="w-4 h-4 text-cream"></i> Czynne całą dobę
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-cream">
+          <i data-lucide="map-pin" class="w-4 h-4 text-cream"></i> Kazanów i okolice
+        </div>
+        <div class="stat-pill rounded-full px-4 py-2 flex items-center gap-2 text-cream">
+          <i data-lucide="hammer" class="w-4 h-4 text-cream"></i> Dekarstwo i ciesiółka
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <svg class="roofline absolute -bottom-px left-0 text-charcoal-raised" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="relative py-20 md:py-28 px-5 md:px-8 bg-charcoal-raised">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-cream-dim">
+        Dlaczego warto wybrać <span class="text-cream">MM Dachy</span>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="clock" class="w-6 h-6 text-cream"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Dostępność całą dobę</h3>
+        <p class="text-cream-dim leading-relaxed">Przy awaryjnym przecieku po burzy przyjeżdżamy o każdej porze, oceniamy sytuację i mówimy wprost, co trzeba zrobić.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="hammer" class="w-6 h-6 text-cream"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Ciesiółka i dekarstwo razem</h3>
+        <p class="text-cream-dim leading-relaxed">Więźbę, ocieplenie, pokrycie i obróbki wykonuje ta sama ekipa, od pierwszej krokwi po ostatni gąsior, bez pośredników.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-8 reveal">
+        <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center mb-6">
+          <i data-lucide="badge-check" class="w-6 h-6 text-cream"></i>
+        </div>
+        <h3 class="font-display font-bold uppercase text-2xl tracking-tight text-cream mb-3">Solidne wykonanie</h3>
+        <p class="text-cream-dim leading-relaxed">Dachówka, blacha na rąbek stojący, papa termozgrzewalna. Materiał i technologię dobieramy do konkretnego budynku.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="uslugi" class="relative pt-20 pb-28 md:pt-28 md:pb-40 px-5 md:px-8 bg-charcoal blueprint overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-cream-dim">
+          Usługi <span class="text-cream">ciesielsko-dekarskie</span>
+        </h2>
+      </div>
+      <a href="uslugi.html" class="btn btn-outline rounded-full px-6 py-3.5 text-sm uppercase tracking-wide shrink-0">
+        Wszystkie usługi
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="layers" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Pokrycia dachowe</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Montaż i wymiana pokryć z dachówki ceramicznej i blachodachówki, dopasowane do konstrukcji dachu.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="hammer" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Więźba dachowa</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Konstrukcje ciesielskie od podstaw, krokwie, płatwie i deskowanie wykonane zgodnie ze sztuką.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="square" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Dachy płaskie</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Papa termozgrzewalna i ocieplenie tarasów oraz dachów płaskich, szczelnie i trwale.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="square-stack" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Obróbki blacharskie</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Kominy, okna połaciowe i kalenice, każdy trudny detal dachu obrobiony blachą na miarę.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="droplets" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Rynny i podbitka</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Montaż systemów rynnowych i podbitki, także z oświetleniem LED wzdłuż okapu.</p>
+      </div>
+      <div class="dark-card rounded-2xl p-7 reveal">
+        <i data-lucide="wrench" class="w-7 h-7 text-cream mb-5"></i>
+        <h3 class="font-display font-bold uppercase text-xl tracking-tight text-cream mb-2">Naprawy i serwis</h3>
+        <p class="text-cream-dim text-sm leading-relaxed">Usuwanie przecieków i wymiana uszkodzonych elementów, także w trybie awaryjnym.</p>
+      </div>
+    </div>
+  </div>
+
+  <svg class="roofline absolute -bottom-px left-0 text-charcoal-raised" viewBox="0 0 1200 46" preserveAspectRatio="none" fill="currentColor">
+    <path d="M0,46 L0,30 L100,6 L200,30 L300,10 L400,30 L500,4 L600,30 L700,14 L800,30 L900,8 L1000,30 L1100,16 L1200,30 L1200,46 Z"/>
+  </svg>
+</section>
+
+<!-- ============ GALLERY PREVIEW ============ -->
+<section id="realizacje" class="py-20 md:py-28 px-5 md:px-8 bg-charcoal-raised">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <div class="max-w-2xl">
+        <div class="rule-bar mb-5"></div>
+        <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-cream-dim">
+          Realizacje <span class="text-cream">z Kazanowa i okolic</span>
+        </h2>
+      </div>
+      <a href="galeria.html" class="btn btn-outline rounded-full px-6 py-3.5 text-sm uppercase tracking-wide shrink-0">
+        Pełna galeria
+        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-[160px] md:auto-rows-[220px]">
+      <button class="gallery-item rounded-xl row-span-2 col-span-1" data-full="images/19.webp" data-caption="Dach z blachy na rąbek stojący na poddaszu użytkowym">
+        <img src="images/19.webp" alt="Dach z blachy na rąbek stojący na poddaszu użytkowym" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Blacha na rąbek</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/14.webp" data-caption="Szczyt dachu z kominem, pokrycie dachówką ceramiczną">
+        <img src="images/14.webp" alt="Szczyt dachu z kominem, pokrycie dachówką ceramiczną" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Pokrycie dachówką</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/5.webp" data-caption="Detal pokrycia dachówką ceramiczną">
+        <img src="images/5.webp" alt="Detal pokrycia dachówką ceramiczną" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Detal dachówki</span>
+      </button>
+      <button class="gallery-item rounded-xl row-span-2" data-full="images/11.webp" data-caption="Konstrukcja więźby dachowej od wewnątrz">
+        <img src="images/11.webp" alt="Konstrukcja więźby dachowej od wewnątrz" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Więźba dachowa</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/26.webp" data-caption="Komin z ozdobną obudową na tle ciemnej dachówki">
+        <img src="images/26.webp" alt="Komin z ozdobną obudową na tle ciemnej dachówki" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Obróbka komina</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/9.webp" data-caption="Podświetlenie LED wzdłuż okapu dachu">
+        <img src="images/9.webp" alt="Podświetlenie LED wzdłuż okapu dachu" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Oświetlenie okapu</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/17.webp" data-caption="Ukończony dom z czterospadowym dachem krytym blachodachówką">
+        <img src="images/17.webp" alt="Ukończony dom z czterospadowym dachem krytym blachodachówką" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Dach czterospadowy</span>
+      </button>
+      <button class="gallery-item rounded-xl" data-full="images/33.webp" data-caption="Dom jednorodzinny z wiatą, ukończone pokrycie dachowe">
+        <img src="images/33.webp" alt="Dom jednorodzinny z wiatą, ukończone pokrycie dachowe" loading="lazy" class="w-full h-full object-cover rounded-xl">
+        <span class="gallery-caption absolute bottom-0 left-0 right-0 text-xs uppercase tracking-wide">Realizacja z wiatą</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="opinie" class="relative py-20 md:py-28 px-5 md:px-8 bg-charcoal blueprint overflow-hidden">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14">
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-cream-dim">
+        Co mówią <span class="text-cream">klienci</span>
+      </h2>
+      <p class="mt-4 text-cream-dim">Rekomendacje z profilu MM Dachy na Facebooku.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <i data-lucide="thumbs-up" class="w-6 h-6 text-cream mb-4"></i>
+        <blockquote class="text-cream leading-relaxed flex-1">"Bardzo polecam, profesjonalne usługi!"</blockquote>
+        <figcaption class="mt-5 text-xs text-cream-dim uppercase tracking-wide">Karolina Piszczek · lipiec 2022</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <i data-lucide="thumbs-up" class="w-6 h-6 text-cream mb-4"></i>
+        <blockquote class="text-cream leading-relaxed flex-1">"Polecam! Solidne wykonanie dachu od podstaw."</blockquote>
+        <figcaption class="mt-5 text-xs text-cream-dim uppercase tracking-wide">Asia Mizerska · lipiec 2022</figcaption>
+      </figure>
+      <figure class="dark-card rounded-2xl p-7 reveal flex flex-col">
+        <i data-lucide="thumbs-up" class="w-6 h-6 text-cream mb-4"></i>
+        <blockquote class="text-cream leading-relaxed flex-1">"Polecam! Lepszych usług dekarskich nie ma!"</blockquote>
+        <figcaption class="mt-5 text-xs text-cream-dim uppercase tracking-wide">Gosia Szczęsna · lipiec 2022</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontakt" class="py-20 md:py-28 px-5 md:px-8 bg-charcoal-raised">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="rule-bar mb-5"></div>
+      <h2 class="font-display font-extrabold uppercase text-4xl md:text-6xl leading-[0.95] tracking-tight text-cream-dim mb-6">
+        Umówmy <span class="text-cream">wycenę</span>
+      </h2>
+      <p class="text-cream-dim text-lg leading-relaxed max-w-lg mb-10">
+        Zadzwoń i opowiedz, co dzieje się z dachem. Ustalimy termin oględzin i powiemy uczciwie, ile będzie kosztować realizacja.
+      </p>
+
+      <div class="space-y-5">
+        <a href="tel:798712825" class="flex items-center gap-4 dark-card rounded-2xl p-5 group">
+          <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center shrink-0">
+            <i data-lucide="phone" class="w-5 h-5 text-cream"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-cream-dim mb-1">Telefon</div>
+            <div class="font-display font-bold text-2xl tracking-tight text-cream">798 712 825</div>
+          </div>
+        </a>
+        <a href="mailto:mizerskidachy@gmail.com" class="flex items-center gap-4 dark-card rounded-2xl p-5 group">
+          <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center shrink-0">
+            <i data-lucide="mail" class="w-5 h-5 text-cream"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-cream-dim mb-1">E-mail</div>
+            <div class="font-display font-bold text-xl tracking-tight text-cream break-all">mizerskidachy@gmail.com</div>
+          </div>
+        </a>
+        <div class="flex items-center gap-4 dark-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center shrink-0">
+            <i data-lucide="map-pin" class="w-5 h-5 text-cream"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-cream-dim mb-1">Adres</div>
+            <div class="font-display font-bold text-xl tracking-tight text-cream">Kroczów Większy 58B, gm. Kazanów</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-4 dark-card rounded-2xl p-5">
+          <div class="w-12 h-12 rounded-full bg-cream/10 flex items-center justify-center shrink-0">
+            <i data-lucide="clock" class="w-5 h-5 text-cream"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wide text-cream-dim mb-1">Godziny</div>
+            <div class="font-display font-bold text-xl tracking-tight text-cream">Czynne całą dobę</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-2xl overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.2),0_8px_20px_-8px_rgba(0,0,0,0.4)] min-h-[420px] border border-white/10">
+      <iframe
+        src="https://www.google.com/maps?q=Kroczów+Większy+58B,+Kazanów&output=embed"
+        class="w-full h-full min-h-[420px]"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu do MM Dachy w Kroczowie Większym">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-charcoal px-5 md:px-8 pt-16 pb-8 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <img src="images/logo.webp" alt="MM Dachy" class="h-11 w-auto rounded-md mb-4">
+        <p class="text-cream-dim text-sm leading-relaxed max-w-xs">Usługi ciesielsko-dekarskie. Dachy budowane od więźby po ostatnią dachówkę.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Nawigacja</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link">Usługi</a></li>
+          <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+          <li><a href="index.html#opinie" class="nav-link">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-cream-dim uppercase tracking-wide text-xs mb-4">Kontakt</div>
+        <ul class="space-y-2 text-cream">
+          <li><a href="tel:798712825" class="nav-link">798 712 825</a></li>
+          <li><a href="mailto:mizerskidachy@gmail.com" class="nav-link break-all">mizerskidachy@gmail.com</a></li>
+          <li class="text-cream-dim">Kroczów Większy 58B, gm. Kazanów</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-xs text-cream-dim">
+      <span>© 2026 MM Dachy. Wszelkie prawa zastrzeżone.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Podgląd zdjęcia">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-cream-dim hover:text-cream transition-colors" aria-label="Zamknij podgląd">
+    <i data-lucide="x" class="w-8 h-8"></i>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  lucide.createIcons();
+
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 12);
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lightboxImg.src = item.dataset.full;
+      lightboxImg.alt = item.dataset.caption || '';
+      lightbox.classList.add('is-open');
+    });
+  });
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  }
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
